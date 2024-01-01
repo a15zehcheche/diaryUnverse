@@ -11,92 +11,61 @@ const store = createStore({
       },
       diarys: [
         {
-          id:'06',
           year: 2023,
           month: 3,
           day: 2,
-          imgs: ['https://pics.craiyon.com/2023-06-09/18da4d7e6e80465ea34ccc36833b926e.webp', 'https://pics.craiyon.com/2023-06-09/18da4d7e6e80465ea34ccc36833b926e.webp'],
-          content: '2023年 3 月 2 号 bra bra bra'
-        },
-        {
-          id:'05',
-          year: 2023,
-          month: 3,
-          day: 2,
-          imgs: ['https://pics.craiyon.com/2023-06-09/18da4d7e6e80465ea34ccc36833b926e.webp', 'https://pics.craiyon.com/2023-06-09/18da4d7e6e80465ea34ccc36833b926e.webp'],
-          content: '2023年 3 月 2 号 bra bra bra'
-        },
-        {
-          id:'04',
-          year: 2023,
-          month: 3,
-          day: 2,
-          imgs: ['https://pics.craiyon.com/2023-06-09/18da4d7e6e80465ea34ccc36833b926e.webp', 'https://pics.craiyon.com/2023-06-09/18da4d7e6e80465ea34ccc36833b926e.webp'],
-          content: '2023年 3 月 2 号 bra bra bra'
-        },
-        {
-          id:'03',
-          year: 2023,
-          month: 3,
-          day: 2,
-          imgs: ['https://pics.craiyon.com/2023-06-09/18da4d7e6e80465ea34ccc36833b926e.webp', 'https://pics.craiyon.com/2023-06-09/18da4d7e6e80465ea34ccc36833b926e.webp'],
-          content: '2023年 3 月 2 号 bra bra bra'
-        },
-        {
-          id:'01',
-          year: 2023,
-          month: 3,
-          day: 2,
-          imgs: ['https://pics.craiyon.com/2023-06-09/18da4d7e6e80465ea34ccc36833b926e.webp', 'https://pics.craiyon.com/2023-06-09/18da4d7e6e80465ea34ccc36833b926e.webp'],
-          content: '2023年 3 月 2 号 bra bra bra',
-          Comment: [
+          items: [
             {
-              user: {
-                id: '0001',
-                name: "qiamo",
-                profilesImg: "src",
-                bgImg: "src"
-              },
-              content: 'bra brabra'
+              imgs: ['https://pics.craiyon.com/2023-06-09/18da4d7e6e80465ea34ccc36833b926e.webp', 'https://pics.craiyon.com/2023-06-09/18da4d7e6e80465ea34ccc36833b926e.webp'],
+              content: '2023年 3 月 2 号 bra bra bra',
+              Comment: []
             },
             {
-              user: {
-                id: '0001',
-                name: "qiamo",
-                profilesImg: "src",
-                bgImg: "src"
-              },
-              content: 'bro bro bro'
-            }
-          ]
+              imgs: ['https://pics.craiyon.com/2023-06-09/18da4d7e6e80465ea34ccc36833b926e.webp', 'https://pics.craiyon.com/2023-06-09/18da4d7e6e80465ea34ccc36833b926e.webp'],
+              content: '2023年 3 月 2 号 bra bra bra',
+              Comment: []
+            },
+            {
+              imgs: ['https://pics.craiyon.com/2023-06-09/18da4d7e6e80465ea34ccc36833b926e.webp', 'https://pics.craiyon.com/2023-06-09/18da4d7e6e80465ea34ccc36833b926e.webp'],
+              content: '2023年 3 月 2 号 bra bra bra',
+              Comment: [
+                {
+                  user: {
+                    id: '0001',
+                    name: "qiamo",
+                    profilesImg: "src",
+                    bgImg: "src"
+                  },
+                  content: 'bra brabra'
+                }
+              ]
+            }],
         },
         {
-          d:'02',
           year: 2023,
           month: 3,
           day: 1,
-          imgs: ['https://pics.craiyon.com/2023-06-09/18da4d7e6e80465ea34ccc36833b926e.webp', 'https://pics.craiyon.com/2023-06-09/18da4d7e6e80465ea34ccc36833b926e.webp'],
-          content: '收到你们仨了呢按时到哪看见的你1三大啊阿萨德那就是等你阿萨德那六十年代深南东路',
-          Comment: [
+          items: [
             {
-              user: {
-                id: '0001',
-                name: "qiamo",
-                profilesImg: "src",
-                bgImg: "src"
-              },
-              content: 'bra bra bra'
+              imgs: ['https://pics.craiyon.com/2023-06-09/18da4d7e6e80465ea34ccc36833b926e.webp', 'https://pics.craiyon.com/2023-06-09/18da4d7e6e80465ea34ccc36833b926e.webp'],
+              content: '2023年 3 月 2 号 bra bra bra',
+              Comment: []
             },
             {
-              user: {
-                id: '0001',
-                name: "qiamo",
-                profilesImg: "src",
-                bgImg: "src"
-              },
-              content: 'bro bro bro'
-            }
-          ]
+            imgs: ['https://pics.craiyon.com/2023-06-09/18da4d7e6e80465ea34ccc36833b926e.webp', 'https://pics.craiyon.com/2023-06-09/18da4d7e6e80465ea34ccc36833b926e.webp'],
+            content: '2023年 3 月 2 号 bra bra bra',
+            Comment: [
+              {
+                user: {
+                  id: '0001',
+                  name: "qiamo",
+                  profilesImg: "src",
+                  bgImg: "src"
+                },
+                content: 'bro bro bro'
+              }
+            ]
+          }],
         },
 
       ],

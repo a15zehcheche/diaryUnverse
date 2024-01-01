@@ -10,25 +10,17 @@
             </div>
         </div>
         <div class="body">
-            <div class="diary" v-for="(diary, count) in diarys" :key="diary.id">
-                <div class="diary-date">
-
-                    <span class="date-month">
-                        <span class="date-day">{{ convertToTwoDigit(diary.day) }}</span>
-                        {{ diary.month }}月
-                    </span>
-                </div>
-                <div class="diary-img"><img :src="diary.imgs[0]" alt="img"></div>
-                <p class="diary-content">{{ diary.content }}</p>
-            </div>
+            <day-list :diarys="diarys"></day-list>
         </div>
     </base-layout>
 </template>
   
 <script>
+import DayList from "../components/dialy/DayList.vue";
 
 export default {
     components: {
+        DayList
     },
     methods: {
         saveMemory(memoryData) {
@@ -41,11 +33,7 @@ export default {
             return this.$store.getters.diarys;
         },
     },
-    methods: {
-        convertToTwoDigit(number) {
-            return number < 10 ? '0' + number.toString() : number.toString();
-        },
-    },
+   
 };
 </script>
 
@@ -82,47 +70,4 @@ export default {
 .body {
     margin-top: 50px;
 }
-
-.diary {
-    display: grid;
-    grid-template-columns: 75px 75px auto;
-
-}
-
-.diary .diary-date {
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    width: 75px;
-    margin-left: 3px;
-}
-
-.diary-date .date-day {
-    font-size: 25px;
-    font-weight: 700;
-}
-
-.diary-date .date-month {
-    font-size: 15px;
-    font-weight: 700;
-}
-
-.diary .diary-img {
-    width: 75px;
-    height: auto;
-}
-
-.diary .diary-content {
-    margin-left: 10px;
-    height: 45px;
-    margin: 0 10px 0 5px ;
-
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    /* number of lines to show */
-    line-clamp: 3;
-    -webkit-box-orient: vertical;
-    line-height: 1.3em;
-    font-size: 12px;
-}</style>
+</style>
