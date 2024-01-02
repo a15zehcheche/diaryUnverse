@@ -10,13 +10,14 @@
             </div>
         </div>
         <div class="body">
+            
             <day-list :diarys="diarys"></day-list>
         </div>
     </base-layout>
 </template>
   
 <script>
-import DayList from "../components/dialy/DayList.vue";
+import DayList from '../components/diary/dayList.vue'
 
 export default {
     components: {
