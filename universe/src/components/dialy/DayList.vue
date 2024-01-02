@@ -15,7 +15,7 @@
 </template>
   
 <script>
-import DaylistItem from './DaylistItem.vue';
+import DaylistItem from './DayListItem.vue';
 
 export default {
     props: ["diarys"],
@@ -60,6 +60,7 @@ export default {
 .item {
     display: grid;
     grid-template-columns: 75px auto;
+    margin: 5px 0 5px 0;
 }
 
 </style>
