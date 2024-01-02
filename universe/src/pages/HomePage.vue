@@ -38,7 +38,10 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.app-header{
+    display: none;
+}
 .home-header {
     height: 300px;
     width: 100%;
